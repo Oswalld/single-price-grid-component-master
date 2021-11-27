@@ -9,5 +9,146 @@ body {
   font-family: 'Karla', sans-serif;
   font-size: 1rem;
   font-weight: 400;
+  background-color: #e5eff5;
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.price-component {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.item1, .item2, .item3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.3rem;
+  padding: 1.8rem 1.5rem;
+}
+
+.item1 {
+  background-color: white;
+}
+
+.item1 .title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2ab2af;
+}
+
+.item1 .subtitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #c0df34;
+}
+
+.item1 p {
+  line-height: 1.6rem;
+  color: #98a6bd;
+}
+
+.item2 {
+  background-color: #2ab2af;
+}
+
+.item2 .title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+}
+
+.item2 .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.item2 .price span {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.item2 p {
+  line-height: 1.6rem;
+  color: white;
+}
+
+.item2 button {
+  padding: 1rem 0;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #c0df34;
+  color: white;
+  font-weight: 700;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.item3 {
+  background-color: #38c2bf;
+}
+
+.item3 .title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+}
+
+.item3 p {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  color: white;
+  opacity: 0.8;
+  padding-right: 30%;
+}
+
+@media only screen and (min-width: 768px) {
+  .item1, .item2, .item3 {
+    padding: 2.5rem 2.3rem;
+  }
+  .price-component {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .price-component .item1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: 1/ 1/ 2/ 3;
+  }
 }
 /*# sourceMappingURL=style.css.map */
